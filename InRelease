@@ -1,0 +1,31 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Thu, 29 Jul 2021 15:01:22 +0000
+MD5Sum:
+ 0e53fca7d1b7d0f06380d8e0ef502209              318 Packages
+ 857b5baa1695eb74efbff5d7d5dbbb4c              265 Packages.gz
+ f73944c22eb596531e2a5e70d9a48d28               38 Release
+SHA1:
+ d81b2427190f34607454159fa965b8d0954680bc              318 Packages
+ f0fed154b7d3a205754384f7fe01fc9726032828              265 Packages.gz
+ c5689c3890b6afd08c6784fa8df5233a1a50e3e0               38 Release
+SHA256:
+ 8ced03cc95d367c48d20dc6302959c339f482364051a288ae946dc8149ecfe6c              318 Packages
+ eee99bd879db20a602a4e0d986e3e82b756e149b9e8834a84b20cfb684e00945              265 Packages.gz
+ 1c168dc038e3cca6e99d83750b1677e695bbfd9e096d8de2d3e1814ed73c8aca               38 Release
+SHA512:
+ 3bfc5eb76b41d31b7ee108e89553b31494ee9ee04e090500799b2f27003c0af6b38add045afbc6ec6302de994c27336e77e9bfbf02ba259c6b9cfcce92b5b35b              318 Packages
+ c367575d556a49e066acfb3b17b3fc120b47969b83fdff92b122680498d99f6a5e285b24476af9cdc5d884c201a2142c6389088928690d19b1550bd3c84d3b52              265 Packages.gz
+ df77b61e24b28c8c72b9cf9b7ddb57e6fb7373cfd301f395af06fbbe2d38c287eb9c4be88dd1198ebf29c32ecfbc72eba57d4e854f55817c20bacfa219a41d60               38 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQFMBAEBCgA2FiEE53rcVFBikIU51dvWG5LCnJQt/JsFAmECxM4YHG1wb2NpZWNo
+YUB2aXJ0dXNsYWIuY29tAAoJEBuSwpyULfybfXMH/jJR0ykAXtYC5w68IYlCkO3M
+efidhgknLJZ1C/40MY9owO+aUUAoYsMyms09tTy90B4nIeZdw1koDiYBJyekKywk
++YLg748TO1ZQ/W/DqC4TPXQSeTpVmi0KPeahUTRTerThI/rIJyENYgLA21StWcrY
+UV1bpf0b/udrrnfucGlNtmhtOGPoBjQ0hhx2E+C6ZVmbR2ghb+5gCYMfeOgEVG+I
+TYfynswiid2e8aXIf5UrKNZhJFJcslQNnYad+lW7XO+M1tAv7CP+USonDSCEQLfe
+5B78wQNj1DAPp+SmhPscx8ZmztGMjUGQ0VRPc6hAr8RdjTn72eWuIQ0mvLajwqA=
+=8m46
+-----END PGP SIGNATURE-----
