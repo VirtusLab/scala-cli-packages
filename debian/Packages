@@ -2,7 +2,7 @@ Package: scala-cli
 Version: 0.0.0+310-g2b1e1b1
 Architecture: all
 Maintainer: scala-packager
-Filename: ./scala-cli.deb
+Filename: ./scala-cli-0.0.1.deb
 Size: 23275848
 MD5sum: 64bd4b63d22f6819bdba3dba0bd2371a
 SHA1: 4d3495e843a2f070b230cd4ad7fec6a239508bb4
