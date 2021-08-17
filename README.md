@@ -16,13 +16,23 @@ sudo apt install scala-cli
 ### How to install
 
 ```
-$ vim /etc/yum.repos.d/virtuslab.repo
+$ cat > /etc/yum.repos.d/virtuslab.repo << EOF
 [virtuslab-repo]
 name=VirtusLab Repo
 baseurl=https://virtuslabrnd.github.io/scala-cli-packages/fedora/Packages
 enabled=1
 gpgcheck=1
 gpgkey=https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg
+EOF
 $ yum repo-pkgs virtuslab-repo list
 $ yum install scala-cli
+```
+
+## Alpine
+
+### How to install
+```
+$ wget -q -O scala-cli.gz  https://github.com/VirtuslabRnD/scala-cli/releases/download/nightly/scala-cli-x86_64-pc-linux-static.gz && gunzip scala-cli.gz
+$ chmod +x scala-cli
+$ mv scala-cli /usr/bin/
 ```
