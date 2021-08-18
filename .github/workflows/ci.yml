@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches:
+    - master
+    tags:
+    - "v*"
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        submodules: true
+    - name: Test
+      run: .github/scripts/test.sh
