@@ -1,0 +1,12 @@
+FROM fedora:latest
+USER root
+RUN echo $'[virtuslab-repo]\n\
+name=VirtusLab Repo\n\
+baseurl=https://virtuslabrnd.github.io/scala-cli-packages/fedora/Packages\n\
+enabled=1\n\
+gpgcheck=1\n\
+gpgkey=https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg\n'\
+>> /etc/yum.repos.d/virtuslab.repo
+RUN yum repo-pkgs virtuslab-repo list
+RUN yum install scala-cli -y
+ENTRYPOINT ["scala-cli"]
