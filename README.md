@@ -19,7 +19,7 @@ sudo apt install scala-cli
 $ cat > /etc/yum.repos.d/virtuslab.repo << EOF
 [virtuslab-repo]
 name=VirtusLab Repo
-baseurl=https://virtuslabrnd.github.io/scala-cli-packages/fedora/Packages
+baseurl=https://virtuslabrnd.github.io/scala-cli-packages/CentOS/Packages
 enabled=1
 gpgcheck=1
 gpgkey=https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg

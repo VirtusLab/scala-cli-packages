@@ -2,7 +2,7 @@ FROM fedora:latest
 USER root
 RUN echo $'[virtuslab-repo]\n\
 name=VirtusLab Repo\n\
-baseurl=https://virtuslabrnd.github.io/scala-cli-packages/fedora/Packages\n\
+baseurl=https://virtuslabrnd.github.io/scala-cli-packages/CentOS/Packages\n\
 enabled=1\n\
 gpgcheck=1\n\
 gpgkey=https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg\n'\
