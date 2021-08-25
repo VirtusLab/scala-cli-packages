@@ -1,7 +1,7 @@
-FROM ubuntu:latest
+FROM debian:latest
 USER root
 RUN apt update
-RUN apt install apt-transport-https ca-certificates curl software-properties-common -y
+RUN apt install curl gnupg -y
 RUN curl -fsSL "https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg"  | apt-key add -
 RUN curl -s --compressed -o /etc/apt/sources.list.d/scala_cli_packages.list "https://virtuslabrnd.github.io/scala-cli-packages/debian/scala_cli_packages.list"
 RUN apt update

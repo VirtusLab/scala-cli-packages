@@ -1,4 +1,4 @@
-FROM fedora:latest
+FROM centos:latest
 USER root
 RUN echo $'[virtuslab-repo]\n\
 name=VirtusLab Repo\n\
