@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/usr/bin/env bash
 set -eu
 
-SCALA_CLI_BASE_URL="https://github.com/VirtuslabRnD/scala-cli/releases/download/latest/"
+SCALA_CLI_BASE_URL="https://github.com/VirtuslabRnD/scala-cli/releases/latest/download/"
 
 architecture() {
     
@@ -15,7 +15,8 @@ architecture() {
             OS_NAME=apple-darwin
             ;;
         *)
-            err "unrecognized OS type: $UNAME"
+            printf "unrecognized OS type: $UNAME\n"
+            exit 1
             ;;
     esac
 }
