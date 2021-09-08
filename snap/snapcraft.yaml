@@ -1,0 +1,25 @@
+name: scala-cli
+version: '0.0.1'
+summary: ScalaCLI combines all the features you need to learn and use Scala
+description: |
+  The scala-cli CLI aims at making it easier to run, test, and package, Scala sources.
+  It can:
+    * compile Scala code
+    * run it
+    * package it as a JAR or in formats such as deb, rpm, MSI, …
+    * fire up a REPL allowing you to manually run your code
+    * compile and run tests suites
+icon: local/scala-cli-logo.png
+base: core18
+grade: stable
+confinement: strict
+
+apps:
+ scala-cli:
+   command: usr/share/scala/scala-cli
+
+parts:
+  scala-cli:
+    plugin: dump
+    source: https://github.com/VirtuslabRnD/scala-cli/releases/download/v0.0.1/scala-cli-x86_64-pc-linux.deb
+
