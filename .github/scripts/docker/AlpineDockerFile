@@ -1,6 +1,6 @@
 FROM alpine:latest
 RUN apk add alpine-sdk sudo
-RUN wget -q -O scala-cli.gz  https://github.com/VirtuslabRnD/scala-cli/releases/download/nightly/scala-cli-x86_64-pc-linux-static.gz && gunzip scala-cli.gz
+RUN wget -q -O scala-cli.gz  https://github.com/Virtuslab/scala-cli/releases/download/nightly/scala-cli-x86_64-pc-linux-static.gz && gunzip scala-cli.gz
 RUN chmod +x scala-cli
 RUN mv scala-cli /usr/bin/
 ENTRYPOINT ["scala-cli"]

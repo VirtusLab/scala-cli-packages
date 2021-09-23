@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-SCALA_CLI_BASE_URL="https://github.com/VirtuslabRnD/scala-cli/releases/latest/download/"
+SCALA_CLI_BASE_URL="https://github.com/Virtuslab/scala-cli/releases/latest/download/"
 
 architecture() {
     

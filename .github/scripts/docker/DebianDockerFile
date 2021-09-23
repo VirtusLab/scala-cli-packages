@@ -2,8 +2,8 @@ FROM debian:latest
 USER root
 RUN apt update
 RUN apt install curl gnupg -y
-RUN curl -fsSL "https://virtuslabrnd.github.io/scala-cli-packages/KEY.gpg"  | apt-key add -
-RUN curl -s --compressed -o /etc/apt/sources.list.d/scala_cli_packages.list "https://virtuslabrnd.github.io/scala-cli-packages/debian/scala_cli_packages.list"
+RUN curl -fsSL "https://virtuslab.github.io/scala-cli-packages/KEY.gpg"  | apt-key add -
+RUN curl -s --compressed -o /etc/apt/sources.list.d/scala_cli_packages.list "https://virtuslab.github.io/scala-cli-packages/debian/scala_cli_packages.list"
 RUN apt update
 RUN apt install scala-cli -y
 ENTRYPOINT ["scala-cli"]

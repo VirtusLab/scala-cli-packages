@@ -21,5 +21,5 @@ apps:
 parts:
   scala-cli:
     plugin: dump
-    source: https://github.com/VirtuslabRnD/scala-cli/releases/download/v0.0.1/scala-cli-x86_64-pc-linux.deb
+    source: https://github.com/Virtuslab/scala-cli/releases/download/v0.0.1/scala-cli-x86_64-pc-linux.deb
 
