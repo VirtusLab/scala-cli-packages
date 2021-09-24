@@ -32,4 +32,9 @@ SCALA_CLI_BIN_FILE="${TMP_DIR}/scala-cli"
 curl -fLo ${SCALA_CLI_ARCHIVE} $URL
 gzip -d ${SCALA_CLI_ARCHIVE}
 chmod +x ${SCALA_CLI_BIN_FILE}
-mv ${SCALA_CLI_BIN_FILE} /usr/local/bin/scala-cli
+"./${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE}
+rm ${SCALA_CLI_BIN_FILE}
+
+echo "scala-cli installed"
+echo "'~/.profile' has been updated"
+echo "To make scala-cli visible, you have to start a new login shell"
