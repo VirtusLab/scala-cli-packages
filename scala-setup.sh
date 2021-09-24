@@ -3,10 +3,10 @@ set -eu
 
 SCALA_CLI_BASE_URL="https://github.com/Virtuslab/scala-cli/releases/latest/download/"
 
+UNAME="$(uname)"
+
 architecture() {
-    
-    UNAME="$(uname)"
-    
+
     case "$UNAME" in
         Linux)
             OS_NAME=pc-linux
@@ -32,9 +32,15 @@ SCALA_CLI_BIN_FILE="${TMP_DIR}/scala-cli"
 curl -fLo ${SCALA_CLI_ARCHIVE} $URL
 gzip -d ${SCALA_CLI_ARCHIVE}
 chmod +x ${SCALA_CLI_BIN_FILE}
-"./${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE}
+"${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE}
 rm ${SCALA_CLI_BIN_FILE}
 
-echo "scala-cli installed"
-echo "'~/.profile' has been updated"
-echo "To make scala-cli visible, you have to start a new login shell"
+case "$UNAME" in
+    Linux)
+        echo "'~/.profile' has been updated"
+        echo "To make scala-cli visible, you have to start a new login shell"
+        ;;
+    Darwin)
+        echo "If scala-cli is not visible, just open new terminal"
+        ;;
+esac
