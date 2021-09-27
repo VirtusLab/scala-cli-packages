@@ -37,10 +37,10 @@ rm ${SCALA_CLI_BIN_FILE}
 
 case "$UNAME" in
     Linux)
-        echo "'~/.profile' has been updated"
-        echo "To make scala-cli visible, you have to start a new login shell"
+        echo "Profile file(s) updated."
+        echo "To run scala-cli, log out and log back in, or run 'source ~/.profile'"
         ;;
     Darwin)
-        echo "If scala-cli is not visible, just open new terminal"
+        echo "To run scala-cli, open new terminal or run 'source ~/.profile'"
         ;;
 esac
