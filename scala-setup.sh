@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 set -eu
 
-SCALA_CLI_BASE_URL="https://github.com/Virtuslab/scala-cli/releases/latest/download/"
+SCALA_CLI_VERSION=0.0.7
 
 if [ $# -ge 1 ] && [ "$1" = "--version" ] ; then
   shift
   if [ $# -ge 1 ] ; then 
-    SCALA_CLI_BASE_URL="https://github.com/VirtusLab/scala-cli/releases/download/v$1/"
+    SCALA_CLI_VERSION="$1"
     shift
   fi
 fi
+
+SCALA_CLI_BASE_URL="https://github.com/VirtusLab/scala-cli/releases/download/v$SCALA_CLI_VERSION/"
 
 UNAME="$(uname)"
 
