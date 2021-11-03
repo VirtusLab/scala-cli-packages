@@ -3,6 +3,14 @@ set -eu
 
 SCALA_CLI_BASE_URL="https://github.com/Virtuslab/scala-cli/releases/latest/download/"
 
+if [ $# -ge 1 ] && [ "$1" = "--version" ] ; then
+  shift
+  if [ $# -ge 1 ] ; then 
+    SCALA_CLI_BASE_URL="https://github.com/VirtusLab/scala-cli/releases/download/v$1/"
+    shift
+  fi
+fi
+
 UNAME="$(uname)"
 
 architecture() {
@@ -32,7 +40,14 @@ SCALA_CLI_BIN_FILE="${TMP_DIR}/scala-cli"
 curl -fLo ${SCALA_CLI_ARCHIVE} $URL
 gzip -d ${SCALA_CLI_ARCHIVE}
 chmod +x ${SCALA_CLI_BIN_FILE}
-"${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE} "$@" < /dev/tty
+
+if [ -t 1 ]; then
+    # stdout is a tty
+    "${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE} "$@" < /dev/tty
+else 
+    "${SCALA_CLI_BIN_FILE}" install-home --scala-cli-binary-path ${SCALA_CLI_BIN_FILE} "$@"
+fi
+
 rm ${SCALA_CLI_BIN_FILE}
 
 case "$UNAME" in
