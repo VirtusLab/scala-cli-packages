@@ -51,13 +51,3 @@ else
 fi
 
 rm ${SCALA_CLI_BIN_FILE}
-
-case "$UNAME" in
-    Linux)
-        echo "Profile file(s) updated."
-        echo "To run scala-cli, log out and log back in, or run 'source ~/.profile'"
-        ;;
-    Darwin)
-        echo "To run scala-cli, open new terminal or run 'source ~/.profile'"
-        ;;
-esac
