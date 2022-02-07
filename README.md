@@ -2,7 +2,7 @@
 
 This repo hosts the debian and fedora repositories with scala-cli on GithubPages. 
 
-This repo is automatically updated in react to the scala-cli release.
+This repo is automatically updated in react to the Scala CLI release.
 
 ## Debian 
 
