@@ -7,6 +7,8 @@ enabled=1\n\
 gpgcheck=1\n\
 gpgkey=https://virtuslab.github.io/scala-cli-packages/KEY.gpg\n'\
 >> /etc/yum.repos.d/virtuslab.repo
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-* &&\
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
 RUN yum repo-pkgs virtuslab-repo list
 RUN yum install scala-cli -y
 ENTRYPOINT ["scala-cli"]
