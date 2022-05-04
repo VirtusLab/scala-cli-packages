@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -eu
 
-SCALA_CLI_VERSION="0.1.4"
+SCALA_CLI_VERSION="0.1.5"
 
 if [ $# -ge 1 ] && [ "$1" = "--version" ] ; then
   shift
