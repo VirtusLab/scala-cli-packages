@@ -152,3 +152,14 @@ SHA1: 9a31e06c128b3ddf009cf14aee10c17957b5ae01
 SHA256: 94bd1e403a52cff54398fae8ba24db91b49ca4f5d40b338c936c42909036094f
 Description: Scala CLI
 
+Package: scala-cli
+Version: 0.1.6
+Architecture: all
+Maintainer: Scala CLI
+Filename: ./scala-cli_0.1.6.deb
+Size: 26165248
+MD5sum: 5a5381a67a9d2349d9cc8e0d9ef49ffc
+SHA1: 6acff05228f8cee9fbfcf9e8582b8ffbb69c4984
+SHA256: a507af660ec5f14bbc51839c9903e03a5b0a4d2668475184ab3037219d4fe9e9
+Description: Scala CLI
+
