@@ -142,6 +142,19 @@ SHA256: ae5c89db17a9d4dd2a1e2a7b7e247639a7ef73a99e40a141201770372ee9ba4c
 Description: Scala CLI
 
 Package: scala-cli
+Version: 0.1.13
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_0.1.13.deb
+Size: 22451760
+MD5sum: e4151368ee2e51b1d0b9df2356f9ed4f
+SHA1: ebf6edad83972cf738643b551318fe4a99e32b30
+SHA256: f0c01ffa976f317f10e17546d548fcf47f041d2bb8f9a5427414bf566af13250
+Section: devel
+Priority: optional
+Description: Scala CLI
+
+Package: scala-cli
 Version: 0.1.2
 Architecture: all
 Maintainer: Scala CLI
