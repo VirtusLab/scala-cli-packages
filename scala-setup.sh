@@ -11,15 +11,19 @@ if [ $# -ge 1 ] && [ "$1" = "--version" ] ; then
   fi
 fi
 
-SCALA_CLI_BASE_URL="https://github.com/VirtusLab/scala-cli/releases/download/v$SCALA_CLI_VERSION/"
+SCALA_CLI_BASE_URL="https://github.com/VirtusLab/scala-cli/releases/download/v$SCALA_CLI_VERSION"
 
 UNAME="$(uname)"
+OS_ARCH="x86_64"
 
 architecture() {
 
     case "$UNAME" in
         Linux)
             OS_NAME=pc-linux
+            if [ "$(uname -m)" == "aarch64" ]; then
+              OS_ARCH="aarch64"
+            fi
             ;;
         Darwin)
             OS_NAME=apple-darwin
@@ -33,7 +37,7 @@ architecture() {
 
 architecture
 
-URL="${SCALA_CLI_BASE_URL}/scala-cli-x86_64-${OS_NAME}.gz"
+URL="${SCALA_CLI_BASE_URL}/scala-cli-${OS_ARCH}-${OS_NAME}.gz"
 TMP_DIR="$(mktemp -d)"
 
 SCALA_CLI_ARCHIVE="${TMP_DIR}/scala-cli.gz"
