@@ -333,3 +333,16 @@ SHA1: 3f94e2ec7fce86663649a7a4a20b544803fdf4e5
 SHA256: 6909ea82b7eab10921088003419a2f0c9d828b617b0a928a4603c3ccb12038e9
 Description: Scala CLI
 
+Package: scala-cli
+Version: 0.2.0
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_0.2.0.deb
+Size: 22833052
+MD5sum: 0eeb6678bf93d851f2932d24b7e67dde
+SHA1: e3b7f3995c0f99717fef7c873c1b1c1bf2a5655a
+SHA256: aad6aefcc27a6a46defbe101f97469c137ce32f309bd03f0863f603a695aee89
+Section: devel
+Priority: optional
+Description: Scala CLI
+
