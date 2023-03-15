@@ -21,7 +21,7 @@ architecture() {
     case "$UNAME" in
         Linux)
             OS_NAME=pc-linux
-            if [ "$(uname -m)" == "aarch64" ]; then
+            if [ "$(uname -m)" = "aarch64" ]; then
               OS_ARCH="aarch64"
             fi
             ;;
