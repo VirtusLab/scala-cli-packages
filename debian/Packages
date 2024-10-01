@@ -671,3 +671,16 @@ Section: devel
 Priority: optional
 Description: Scala CLI
 
+Package: scala-cli
+Version: 1.5.1
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.5.1.deb
+Size: 23890332
+MD5sum: 11fbee1e4a74c0b3601e0b8f06709831
+SHA1: c765a2f08820d5b3442f712522427a59bd8822db
+SHA256: 45c5acfcade027a42bbdb88a64153104cf7ebf30a8d926d01fb5e86f759dce68
+Section: devel
+Priority: optional
+Description: Scala CLI
+
