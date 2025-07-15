@@ -814,3 +814,16 @@ Section: devel
 Priority: optional
 Description: Scala
 
+Package: scala-cli
+Version: 1.8.4
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.8.4.deb
+Size: 29599812
+MD5sum: c4a7cf7c2418b9b7d52759197c40f992
+SHA1: 909bdba0657119b9dcf407710985db6d6320a707
+SHA256: 1bfd6994001e1318e211e608ed3ade873364a58b4c938e6ecbf740da95fd480d
+Section: devel
+Priority: optional
+Description: Scala
+
