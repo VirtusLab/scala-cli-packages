@@ -840,3 +840,16 @@ Section: devel
 Priority: optional
 Description: Scala
 
+Package: scala-cli
+Version: 1.9.0
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.9.0.deb
+Size: 29665534
+MD5sum: fbad777529f58a8ca1eadcf49b9899d8
+SHA1: 060e50ad814db37c3c69c26de891e6df139a8cf0
+SHA256: de55b19fdb290fbb742fb5933edee74bd1029dec1ae724ddc0e485fdb6090cc6
+Section: devel
+Priority: optional
+Description: Scala
+
