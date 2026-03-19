@@ -633,6 +633,19 @@ Priority: optional
 Description: Scala
 
 Package: scala-cli
+Version: 1.12.5
+Architecture: all
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.12.5.deb
+Size: 32546578
+MD5sum: 7e7952a4133abc296bb16cc23d19213e
+SHA1: 0e0a595c88db0197dae5528ec734b61c61087593
+SHA256: 6e7d6e3a56a1b0c91188d53615ac37fd6a72f4ab33ffc159da180b8ca22e5bad
+Section: devel
+Priority: optional
+Description: Scala
+
+Package: scala-cli
 Version: 1.2.0
 Architecture: all
 Maintainer: scala-cli@virtuslab.com
