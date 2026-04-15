@@ -1,1 +1,1 @@
-deb https://virtuslab.github.io/scala-cli-packages/debian ./
+deb [signed-by=/etc/apt/keyrings/scala-cli-archive-keyring.gpg] https://virtuslab.github.io/scala-cli-packages/debian ./
