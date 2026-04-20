@@ -7,5 +7,5 @@ docker run scala-cli-alpine -e 'println("Hello World")'
 docker build -t scala-cli-ubuntu -f .github/scripts/docker/DebianDockerFile .
 docker run scala-cli-ubuntu -e 'println("Hello World")'
 
-docker build -t scala-cli-fedora -f .github/scripts/docker/CentOSDockerFile .
+docker build -t scala-cli-fedora -f .github/scripts/docker/FedoraDockerFile .
 docker run scala-cli-fedora -e 'println("Hello World")'
