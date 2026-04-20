@@ -15,5 +15,10 @@ jobs:
       with:
         fetch-depth: 0
         submodules: true
-    - name: Test
-      run: .github/scripts/test.sh
+    - name: Test Alpine
+      run: .github/scripts/test-alpine.sh
+    - name: Test Debian
+      run: .github/scripts/test-debian.sh
+    - name: Test Fedora
+      continue-on-error: true # TODO: fix RPM release on scala-cli side
+      run: .github/scripts/test-fedora.sh
