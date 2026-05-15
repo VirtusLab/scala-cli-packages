@@ -20,5 +20,4 @@ jobs:
     - name: Test Debian
       run: .github/scripts/test-debian.sh
     - name: Test Fedora
-      continue-on-error: true # TODO: fix RPM release on scala-cli side
       run: .github/scripts/test-fedora.sh
