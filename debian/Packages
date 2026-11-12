@@ -737,6 +737,32 @@ Priority: optional
 Description: Scala
 
 Package: scala-cli
+Version: 1.19.0
+Architecture: amd64
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.19.0.deb
+Size: 34798932
+MD5sum: c11813fb7198f677b9e24742fe23a0a3
+SHA1: 217723e913bc1abf628082436c5d5e9763267678
+SHA256: d4bd78dfcb99960a01a265a6250fe4f413fcb69839c8d60557b4283f5af39273
+Section: devel
+Priority: optional
+Description: Scala
+
+Package: scala-cli
+Version: 1.19.0
+Architecture: arm64
+Maintainer: scala-cli@virtuslab.com
+Filename: ./scala-cli_1.19.0_arm64.deb
+Size: 33474496
+MD5sum: c2047cd0f18ce142a42cb64cae36a3c5
+SHA1: aef94129005882d46fa63de91c3080b34bfd59e6
+SHA256: 41d178ce4a6ffb0f29007add6448270142c2bb606f0f5242db82d2a8da832795
+Section: devel
+Priority: optional
+Description: Scala
+
+Package: scala-cli
 Version: 1.2.0
 Architecture: all
 Maintainer: scala-cli@virtuslab.com
